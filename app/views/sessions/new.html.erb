@@ -1,0 +1,22 @@
+<h1>Identifiez-vous</h1>
+
+
+<% provide(:title, "Log in") %>
+<h5>Vous y êtes presque</h5>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(:session, url: login_path) do |f| %>
+
+      <%= f.label :id %>
+      <%= f.text_field :id, class: 'form-control' %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.submit "Log in", class: "btn btn-primary" %>
+    <% end %>
+
+    <p>Vous êtes un nouvel utilisateur ? <%= link_to "Inscrivez-vous ici !", new_user_path %></p>
+  </div>
+</div>
