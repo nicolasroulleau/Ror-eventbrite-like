@@ -1,0 +1,19 @@
+<h1>Modifie ton nom</h1>
+
+<%= form_with model: @user, local: true do |form| %>
+
+  <p>
+    <%= form.label :Nom %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.submit title="Editer"%>
+  </p>
+
+<% end %>
+
+
+<%= link_to 'Retour', users_path %>
+
+

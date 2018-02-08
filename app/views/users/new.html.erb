@@ -1,0 +1,12 @@
+<h1>Nouvel utilisateur</h1>
+
+<%= form_for @user do |f| %>
+<p><%= f.label :name %><br>
+   <%= f.text_field :name %></p>
+  <%= f.submit "Valider" %>
+<% end %>
+
+</br>
+<div><%= link_to"Retour",users_path %></div>
+
+
