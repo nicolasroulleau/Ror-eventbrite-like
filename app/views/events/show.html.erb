@@ -4,7 +4,7 @@
 <p><%= @event.id %></p>
 
 <p class="show-text">Date :</p>
-<p><%= @event.date %></p>
+<p><%= @event.date.strftime("%d/%m/%y") %></p>
 
 <p class="show-text">Description :</p>
 <p><%= @event.description %></p>
@@ -15,7 +15,10 @@
 <p class="show-text">Créateur :</p>
 <p><%= @event.creator.name %></p>
 
-
+<p class="show-text">Liste des participants :</p>
+<% @event.attendees.each do |attendee| %>
+    <span><%= attendee.name %></span>
+    <% end %>
 
 
 <div><%= link_to"Retour",events_path %></div>

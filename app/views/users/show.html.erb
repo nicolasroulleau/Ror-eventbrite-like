@@ -7,9 +7,16 @@
 <p><%= @user.name %></p>
 
 <div>
-<p class="show-text">Evénements :</p>
+<p class="show-text">Evénement(s) créé(s) :</p>
 <% @user.created_events.each do |created_event| %>
-    <p>L'événement <%= created_event.description %> se tiendra à <%= created_event.place %> le <%= created_event.date %></p>
+    <p>L'événement <%= created_event.description %>, qui se tiendra à <%= created_event.place %> le <%= created_event.date %></p>
+    <% end %>
+</div>
+
+<div>
+<p class="show-text">Tu es invité à :</p>
+<% @user.attended_events.each do |attended_event| %>
+    <p>L'événement <%= attended_event.description %>, qui se tiendra à <%= attended_event.place %> le <%= attended_event.date %></p>
     <% end %>
 </div>
 
