@@ -1,24 +1,7 @@
-# README
+# Projet Eventbrite
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bienvenue sur mon repo EventBrite_like.
 
-Things you may want to cover:
+Pour accéder à l'app sur Heroku, vous pouvez cliquer sur le lien suivant: https://boiling-springs-45299.herokuapp.com/
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Have fun !!
