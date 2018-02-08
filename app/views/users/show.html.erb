@@ -6,7 +6,11 @@
 <p class="show-text">Nom :</p>
 <p><%= @user.name %></p>
 
+<div>
+<p class="show-text">Evénements :</p>
+<% @user.created_events.each do |created_event| %>
+    <p>L'événement <%= created_event.description %> se tiendra à <%= created_event.place %> le <%= created_event.date %></p>
+    <% end %>
+</div>
 
 <div><%= link_to"Retour",users_path %></div>
-
-

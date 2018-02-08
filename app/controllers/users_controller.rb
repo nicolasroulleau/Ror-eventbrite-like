@@ -20,6 +20,7 @@ class UsersController < ApplicationController
 	else 
 		render 'new'
 	end
+  # puts @user.errors.messages
   end
 
   def show
@@ -42,6 +43,7 @@ class UsersController < ApplicationController
     else
     	render 'edit'
     end
+    # puts @user.errors.messages
   end
 
   def destroy
@@ -59,5 +61,4 @@ class UsersController < ApplicationController
   end
 
 end
-
 

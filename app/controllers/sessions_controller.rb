@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     user = User.find_by(name: params[:session][:name])
     if user 
   		log_in user
-  		flash[:success] = "Bienvenue sur ce site de ouf"
+  		flash[:success] = "Bienvenue sur mon site"
   		redirect_to user
   	else 
   		flash.now[:danger] = "Désolé votre Id et votre nom ne correspondent pas "
@@ -20,7 +20,6 @@ class SessionsController < ApplicationController
     log_out
     redirect_to root_url
   end
-
 
 
 end
